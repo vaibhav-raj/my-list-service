@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    /* Core output */
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "outDir": "dist",
+
+    /* TypeScript strictness & compatibility */
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    /* Path Aliases */
+    "baseUrl": "./src",
+    "paths": {
+      "@libs/*": ["libs/*"],
+      "@modules/*": ["modules/*"],
+      "@config/*": ["config/*"],
+      "@utils/*": ["utils/*"],
+      "@errors/*": ["errors/*"]
+    }
+  },
+
+  "include": ["src/**/*", "middlewares/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

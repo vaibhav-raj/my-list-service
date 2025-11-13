@@ -1,0 +1,49 @@
+{
+  "name": "my-list-service",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch --import tsx --env-file=.env.dev src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "seed": "node --import tsx --env-file=.env.dev src/scripts/seed.ts",
+    "test": "NODE_ENV=test jest --coverage",
+    "test:watch": "NODE_ENV=test jest --watch",
+    "test:unit": "NODE_ENV=test jest --testPathPattern=unit",
+    "test:integration": "NODE_ENV=test jest --testPathPattern=integration",
+    "test:ci": "NODE_ENV=test jest --coverage --ci --maxWorkers=2"
+  },
+  "dependencies": {
+    "await-to-js": "^3.0.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "joi": "^17.13.3",
+    "mongoose": "^8.19.3",
+    "morgan": "^1.10.1",
+    "reflect-metadata": "^0.1.13",
+    "tsyringe": "^4.7.0",
+    "winston": "^3.14.2"
+  },
+  "devDependencies": {
+    "@jest/globals": "^30.2.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.5",
+    "@types/jest": "^30.0.0",
+    "@types/joi": "^17.2.2",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^24.10.1",
+    "@types/supertest": "^6.0.3",
+    "jest": "^30.2.0",
+    "mongodb-memory-server": "^10.1.0",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
