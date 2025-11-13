@@ -1,12 +1,10 @@
 {
   "compilerOptions": {
-    /* Core output */
     "target": "ES2022",
-    "module": "ESNext",
+    "module": "CommonJS",
     "moduleResolution": "Node",
     "outDir": "dist",
 
-    /* TypeScript strictness & compatibility */
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -16,7 +14,6 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
 
-    /* Path Aliases */
     "baseUrl": "./src",
     "paths": {
       "@libs/*": ["libs/*"],
